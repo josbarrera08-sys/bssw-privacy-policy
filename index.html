@@ -1,0 +1,229 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>BSSW Reviewer Privacy</title>
+<style>
+  :root {
+    --bg: #faf8f5;
+    --surface: #ffffff;
+    --border: #e4ddd2;
+    --text: #262220;
+    --text-dim: #6b6259;
+    --accent: #7a1f3d;
+    --accent-soft: #f4e6ea;
+    --code-bg: #f1ede6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17151a;
+      --surface: #1f1c22;
+      --border: #34303a;
+      --text: #ece7e2;
+      --text-dim: #a89f9b;
+      --accent: #e0a0b3;
+      --accent-soft: #2c1b22;
+      --code-bg: #26222a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17151a;
+    --surface: #1f1c22;
+    --border: #34303a;
+    --text: #ece7e2;
+    --text-dim: #a89f9b;
+    --accent: #e0a0b3;
+    --accent-soft: #2c1b22;
+    --code-bg: #26222a;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.65;
+    margin: 0;
+    padding-block: 48px;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-inline: 20px;
+  }
+  header {
+    margin-bottom: 40px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--border);
+  }
+  .eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(28px, 5vw, 38px);
+    font-weight: 600;
+    margin: 0 0 8px;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--text-dim);
+    font-size: 14px;
+  }
+  h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 21px;
+    font-weight: 600;
+    margin: 40px 0 12px;
+    color: var(--text);
+  }
+  p, li { color: var(--text); }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  strong { color: var(--text); }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 0 0 16px;
+  }
+  .card-title {
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 20px;
+    font-size: 14.5px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    color: var(--text-dim);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+  }
+  .table-wrap { overflow-x: auto; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-dim);
+    font-size: 13px;
+  }
+  code {
+    background: var(--code-bg);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 0.92em;
+  }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Source+Sans+3:wght@400;600;700&display=swap">
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Privacy Policy</span>
+    <h1>BSSW Reviewer</h1>
+    <div class="meta">Last updated: September 18, 2026 · Developer: Joseph C. Barrera, RSW · Contact: <a href="mailto:josbarrera08@gmail.com">josbarrera08@gmail.com</a></div>
+  </header>
+
+  <p>BSSW Reviewer (also listed on Google Play as "Social Work Licensure Reviewer") is a study app for BS Social Work students and Social Work Licensure Examination (SWLE/LESW) reviewees in the Philippines. This page explains what information the app collects, why, and what choices you have — including how to delete your account and data. The app is built to work fully offline for its core study features — quizzes, mock exams, and flashcards — and only reaches the internet for the optional Leaderboard, Feedback, and ad-supported features described below.</p>
+
+  <h2>Information stored only on your device</h2>
+  <p>These never leave your device and are not visible to the developer or anyone else:</p>
+  <ul>
+    <li>Your quiz, mock exam, and flashcard history and progress (Recent Activity, Subject Performance, My Progress, Flashcard History)</li>
+    <li>Notes and Favorites you attach to questions</li>
+    <li>App preferences: theme, font, layout, and notification settings</li>
+  </ul>
+  <p>You can clear this data at any time from <strong>Settings → Data & History → Clear Learning History</strong>. Uninstalling the app also removes it.</p>
+
+  <h2>Information collected if you use optional online features</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Feature</th><th>What's collected</th><th>Why</th></tr>
+    <tr>
+      <td>Google Sign-In (optional)</td>
+      <td>Your name, email address, and profile photo, as provided by Google</td>
+      <td>To identify your entry on the shared Leaderboard</td>
+    </tr>
+    <tr>
+      <td>Leaderboard</td>
+      <td>Display name, photo, chosen avatar, and your aggregate quiz accuracy (not individual question answers)</td>
+      <td>To show a shared ranking of reviewees inside the app</td>
+    </tr>
+    <tr>
+      <td>Send Feedback</td>
+      <td>The message you write, an optional name, and — if you're signed in — your account ID</td>
+      <td>So the developer can read and respond to feedback</td>
+    </tr>
+    <tr>
+      <td>Ads</td>
+      <td>Advertising identifiers and interaction data, collected by Google AdMob per its own privacy practices</td>
+      <td>To show ads that keep the app free</td>
+    </tr>
+  </table>
+  </div>
+
+  <div class="card">
+    <div class="card-title">You're always in control</div>
+    <p style="margin:0">Signing in with Google is entirely optional — the Leaderboard is the only feature that needs it. Everything else in the app (quizzes, mock exams, flashcards, notes, favorites, progress tracking) works fully without ever signing in or connecting to the internet.</p>
+  </div>
+
+  <h2>How your information is used</h2>
+  <ul>
+    <li><strong>Leaderboard data</strong> is stored in Google Firebase (Cloud Firestore) and is visible to other app users as a ranking — only your display name, photo, avatar, and aggregate accuracy are shown, never your email or your individual quiz answers.</li>
+    <li><strong>Feedback</strong> is stored privately in Firebase and is readable only by the developer — it is never shown to other users.</li>
+    <li><strong>Ad data</strong> is collected and processed by Google AdMob under its own privacy policy. Where required, the app will ask for your consent to personalized ads before showing any.</li>
+  </ul>
+
+  <h2>Data sharing</h2>
+  <p>Your information is not sold. It is shared only with the service providers needed to run the features above:</p>
+  <ul>
+    <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore) — for sign-in, the Leaderboard, and Feedback storage</li>
+    <li><strong>Google AdMob</strong> — for showing ads</li>
+  </ul>
+
+  <h2 id="delete-account">Delete your account and data</h2>
+  <div class="card">
+    <div class="card-title">How to request deletion</div>
+    <p style="margin:0 0 10px">To delete your BSSW Reviewer account and the data associated with it, send an email to <a href="mailto:josbarrera08@gmail.com?subject=Delete%20my%20BSSW%20Reviewer%20account">josbarrera08@gmail.com</a> from the same Google account email you used to sign in, with the subject line "Delete my BSSW Reviewer account." Include your Leaderboard nickname if you remember it, to help us find your entry faster.</p>
+    <p style="margin:0">Requests are processed within <strong>7 days</strong>. You'll receive a confirmation email once it's done.</p>
+  </div>
+  <p><strong>What gets deleted:</strong> your Leaderboard entry (display name, avatar/photo, aggregate accuracy, best score and time), any Feedback messages linked to your account, and your Google sign-in association with the app's backend.</p>
+  <p><strong>What is not affected:</strong> study data that only ever lived on your own device (quiz history, notes, favorites, flashcard progress) is not touched by this process — it was never sent to us in the first place. You can clear that separately, any time, from Settings → Data & History → Clear Learning History, or by uninstalling the app.</p>
+  <p>You do not need to delete the app or your Google account itself to make this request — deleting your BSSW Reviewer data does not affect your Google account or any other app.</p>
+  <p>Locally-stored study data stays on your device until you clear it or uninstall the app. Leaderboard and feedback data stored in Firebase is otherwise kept only until you request deletion as described above.</p>
+
+  <h2>Children's privacy</h2>
+  <p>BSSW Reviewer is intended for college-level Social Work students and licensure reviewees and is not directed at children under 13. The app does not knowingly collect personal information from children under 13.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the "Last updated" date at the top of this page will change too. Continued use of the app after an update means you accept the revised policy.</p>
+
+  <footer>
+    BSSW Reviewer is developed independently by Joseph C. Barrera, RSW, for BS Social Work students and SWLE/LESW reviewees in the Philippines. Questions about this policy, your data, or account deletion requests can be sent to <a href="mailto:josbarrera08@gmail.com">josbarrera08@gmail.com</a>.
+  </footer>
+</div>
+
+</body></html>
