@@ -144,7 +144,7 @@
   <header>
     <span class="eyebrow">Privacy Policy</span>
     <h1>BSSW Reviewer</h1>
-    <div class="meta">Last updated: September 18, 2026 · Developer: Joseph C. Barrera, RSW · Contact: <a href="mailto:josbarrera08@gmail.com">josbarrera08@gmail.com</a></div>
+    <div class="meta">Last updated: September 25, 2026 · Developer: Joseph C. Barrera, RSW · Contact: <a href="mailto:josbarrera08@gmail.com">josbarrera08@gmail.com</a></div>
   </header>
 
   <p>BSSW Reviewer (also listed on Google Play as "Social Work Licensure Reviewer") is a study app for BS Social Work students and Social Work Licensure Examination (SWLE/LESW) reviewees in the Philippines. This page explains what information the app collects, why, and what choices you have — including how to delete your account and data. The app is built to work fully offline for its core study features — quizzes, mock exams, and flashcards — and only reaches the internet for the optional Leaderboard, Feedback, and ad-supported features described below.</p>
@@ -152,11 +152,12 @@
   <h2>Information stored only on your device</h2>
   <p>These never leave your device and are not visible to the developer or anyone else:</p>
   <ul>
-    <li>Your quiz, mock exam, and flashcard history and progress (Recent Activity, Subject Performance, My Progress, Flashcard History)</li>
+    <li>Your full quiz, mock exam, and flashcard history and progress (Recent Activity, Subject Performance, My Progress, Flashcard History), including the individual answers you chose</li>
     <li>Notes and Favorites you attach to questions</li>
     <li>App preferences: theme, font, layout, and notification settings</li>
   </ul>
   <p>You can clear this data at any time from <strong>Settings → Data & History → Clear Learning History</strong>. Uninstalling the app also removes it.</p>
+  <p>If you <strong>sign in with Google</strong>, a summary of each quiz and mock exam result is <em>also</em> saved online, as described in the next section. If you never sign in, none of your results leave your device.</p>
 
   <h2>Information collected if you use optional online features</h2>
   <div class="table-wrap">
@@ -165,12 +166,17 @@
     <tr>
       <td>Google Sign-In (optional)</td>
       <td>Your name, email address, and profile photo, as provided by Google</td>
-      <td>To identify your entry on the shared Leaderboard</td>
+      <td>To identify your entry on the shared Leaderboard, and to link your quiz and mock exam results to your account</td>
     </tr>
     <tr>
       <td>Leaderboard</td>
       <td>Display name, photo, chosen avatar, and your aggregate quiz accuracy (not individual question answers)</td>
       <td>To show a shared ranking of reviewees inside the app</td>
+    </tr>
+    <tr>
+      <td>Quiz &amp; mock exam results (signed-in users only)</td>
+      <td>For each quiz or mock exam you finish: the subject or exam area, quiz type (quiz or mock exam), score, number correct and unanswered, pass/fail result, time taken, and date and time — stored together with your email address. Your individual answers to each question are <strong>not</strong> uploaded.</td>
+      <td>So the developer, as the app's administrator and a review instructor, can monitor students' progress and give study support</td>
     </tr>
     <tr>
       <td>Send Feedback</td>
@@ -187,12 +193,13 @@
 
   <div class="card">
     <div class="card-title">You're always in control</div>
-    <p style="margin:0">Signing in with Google is entirely optional — the Leaderboard is the only feature that needs it. Everything else in the app (quizzes, mock exams, flashcards, notes, favorites, progress tracking) works fully without ever signing in or connecting to the internet.</p>
+    <p style="margin:0">Signing in with Google is entirely optional. It's only needed to appear on the Leaderboard and to have your results saved to your account. Everything else in the app (quizzes, mock exams, flashcards, notes, favorites, progress tracking) works fully without ever signing in or connecting to the internet — and if you don't sign in, no quiz results are collected at all.</p>
   </div>
 
   <h2>How your information is used</h2>
   <ul>
     <li><strong>Leaderboard data</strong> is stored in Google Firebase (Cloud Firestore) and is visible to other app users as a ranking — only your display name, photo, avatar, and aggregate accuracy are shown, never your email or your individual quiz answers.</li>
+    <li><strong>Quiz and mock exam results</strong> of signed-in users are stored privately in Firebase (Cloud Firestore), linked to your email address. They are <strong>never shown to other app users</strong> — only the developer can view them, through an administrator-only screen in the app, and may export them to a spreadsheet for monitoring student progress. They are not published or sold. If you finish a quiz while offline and signed in, the result is kept on your phone and uploaded automatically once you're back online.</li>
     <li><strong>Feedback</strong> is stored privately in Firebase and is readable only by the developer — it is never shown to other users.</li>
     <li><strong>Ad data</strong> is collected and processed by Google AdMob under its own privacy policy. Where required, the app will ask for your consent to personalized ads before showing any.</li>
   </ul>
@@ -200,7 +207,7 @@
   <h2>Data sharing</h2>
   <p>Your information is not sold. It is shared only with the service providers needed to run the features above:</p>
   <ul>
-    <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore) — for sign-in, the Leaderboard, and Feedback storage</li>
+    <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore) — for sign-in, the Leaderboard, quiz and mock exam result history, and Feedback storage</li>
     <li><strong>Google AdMob</strong> — for showing ads</li>
   </ul>
 
@@ -210,10 +217,10 @@
     <p style="margin:0 0 10px">To delete your BSSW Reviewer account and the data associated with it, send an email to <a href="mailto:josbarrera08@gmail.com?subject=Delete%20my%20BSSW%20Reviewer%20account">josbarrera08@gmail.com</a> from the same Google account email you used to sign in, with the subject line "Delete my BSSW Reviewer account." Include your Leaderboard nickname if you remember it, to help us find your entry faster.</p>
     <p style="margin:0">Requests are processed within <strong>7 days</strong>. You'll receive a confirmation email once it's done.</p>
   </div>
-  <p><strong>What gets deleted:</strong> your Leaderboard entry (display name, avatar/photo, aggregate accuracy, best score and time), any Feedback messages linked to your account, and your Google sign-in association with the app's backend.</p>
-  <p><strong>What is not affected:</strong> study data that only ever lived on your own device (quiz history, notes, favorites, flashcard progress) is not touched by this process — it was never sent to us in the first place. You can clear that separately, any time, from Settings → Data & History → Clear Learning History, or by uninstalling the app.</p>
+  <p><strong>What gets deleted:</strong> your Leaderboard entry (display name, avatar/photo, aggregate accuracy, best score and time), your saved quiz and mock exam result history and the email address stored with it, any Feedback messages linked to your account, and your Google sign-in association with the app's backend. Copies previously exported by the developer for progress monitoring will also be deleted.</p>
+  <p><strong>What is not affected:</strong> study data that only lives on your own device (your on-device quiz history and answers, notes, favorites, flashcard progress) is not touched by this process, because it was never sent to us. You can clear that separately, any time, from Settings → Data & History → Clear Learning History, or by uninstalling the app.</p>
   <p>You do not need to delete the app or your Google account itself to make this request — deleting your BSSW Reviewer data does not affect your Google account or any other app.</p>
-  <p>Locally-stored study data stays on your device until you clear it or uninstall the app. Leaderboard and feedback data stored in Firebase is otherwise kept only until you request deletion as described above.</p>
+  <p>Locally-stored study data stays on your device until you clear it or uninstall the app. Leaderboard data, quiz and mock exam result history, and feedback stored in Firebase are otherwise kept only until you request deletion as described above.</p>
 
   <h2>Children's privacy</h2>
   <p>BSSW Reviewer is intended for college-level Social Work students and licensure reviewees and is not directed at children under 13. The app does not knowingly collect personal information from children under 13.</p>
